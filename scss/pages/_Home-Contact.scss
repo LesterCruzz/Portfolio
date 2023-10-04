@@ -76,6 +76,9 @@
             width: 100%;
             padding: 3rem;
             transition: .5s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             &.open {
                 right: 0;
                 transition: .5s ease;
@@ -84,10 +87,12 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                gap: 10rem;
                 .t__brand {
                     display: flex;
                 align-items: center;
                 gap: 1.3rem;
+                
                 }
                 .Ex {
                     width: 3rem;
@@ -116,12 +121,33 @@
                 a {
                     font-weight: bold;
                     color: $clr--dark;
+                    z-index: 99;
                 }
              }
              .nav__button {
                 width: 18rem;
                 text-align: center;
-                margin-left: 12rem;
+                &:hover {
+                    background-color: $clr--primary;
+                    color: $clr--light;
+                    transition: .5s ease;
+                }
+                
+             }
+             .highlight {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                .h__home {
+                    position: absolute;
+                    height: 3rem;
+                    width: 33rem;
+                    background-color: $clr--primary;
+                    top: -37.4rem;
+                    left: -3rem;
+                    
+                }
+                
              }
         }
     }
