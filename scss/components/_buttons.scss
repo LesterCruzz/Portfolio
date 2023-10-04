@@ -1,0 +1,14 @@
+@use '../abstract/' as *;
+
+.btn {
+	background-color: transparent;
+	padding: 1.2rem 4.7rem;
+	border-top-right-radius: 1.5rem;
+	display: inline-block;
+    border: 1px solid transparent;
+    
+&.bg--primary {
+        border: 1.5px solid $clr--primary;
+        color: $clr--primary;
+	}
+}
