@@ -50,8 +50,16 @@ $positions: absolute, relative, sticky, fixed;
     }
 }
 
-@for $i from 0 through 100 {
+@for $i from 0 through 150 {
 
+	// max height
+	.mh--#{$i} {
+		max-height: $i + rem;
+	}
+	// top
+	.t--#{$i} {
+		top: $i + rem;
+	}
 	// width
 	.w--#{$i} {
 		width: $i + rem;

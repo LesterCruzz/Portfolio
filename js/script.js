@@ -48,3 +48,30 @@ box.addEventListener("mouseleave", () =>{
     servicesImg.classList.remove("open");
      servD.classList.remove("open");
  });
+
+//  Services
+
+// const nav = document.querySelectorAll(".nav");
+// const navContent = document.querySelectorAll(".s__content");
+// nav.forEach((snav) => {
+//   snav.addEventListener("click", () => {
+//     removeActiveNav();
+//     snav.classList.add("active");
+//     const activeNav = document.querySelector(`#${nav.id}-content`);
+//     removeActiveNav();
+//     activeNav.classList.add("active");
+//   });
+// });
+
+// function removeActiveNav() {
+//   nav.forEach((snav) => {
+//     snav.classList.remove("active");
+//   });
+// }
+
+// function removeActiveNav() {
+//   navContent.forEach((snav) => {
+//     snav.classList.remove("active");
+//   });
+// }
+

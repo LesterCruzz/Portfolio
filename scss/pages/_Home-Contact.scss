@@ -96,6 +96,9 @@
                     display: flex;
                 align-items: center;
                 gap: 1.3rem;
+                h3 {
+                    color: $clr--dark;
+                }
                 
                 }
                 .Ex {
@@ -475,4 +478,169 @@
                 }
             }
         } 
+}
+
+// Call To Action
+
+.cta {
+    padding: 5rem;
+    .cta__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .cta__text {
+            h2 {
+                margin-bottom: 4rem;
+            }
+            p {
+                margin-bottom: 6rem;
+            }
+        }
+    }
+}
+
+//  Footer
+
+.footer {
+    padding: 4rem;
+    .footer__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .footer__branding {
+            margin-bottom: 3rem;
+            a {
+                display: flex;
+                align-items: center;
+                gap: 1.3rem;
+            img {
+                width: 4rem;
+            }
+            h3 {
+                font-size: 3rem;
+                span {
+                    color: $clr--primary;
+                }
+            }
+        }
+        }
+        ul {
+            margin-bottom: 3rem;
+            display: flex;
+            gap: 3rem;
+            a {
+                color: $clr--primary;
+                font-size: 2.5rem;
+                &:hover {
+                    color: $clr--light;
+                }
+            }
+        }
+    }
+}
+
+// Services Page
+
+// Services__Banner
+
+.s__banner {
+    padding: 5rem 2rem;
+    .s__wrapper {
+        text-align: center;
+        h2 {
+            border-bottom: 2.5px solid $clr--primary;
+            margin-bottom: 4rem;
+            padding-bottom: 2rem;   
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 6rem;
+        li {
+            border-bottom: 2.5px solid $clr--primary;
+            margin-bottom: 1rem;
+            padding: 2rem;
+            width: 25rem;
+        a {
+            color: $clr--light;
+            font-size: 2rem;
+            opacity: 60%;
+            transition: .5s ease;
+            &:hover {
+                opacity: 100%;
+                font-size: 2.1rem;
+                
+            }
+        }
+    }
+    }
+    .s__slider {
+        .s__content {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            img {
+                width: 50%;
+            }
+            .sd__text {
+                text-align: start;
+                h4 {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+}
+
+// Portfolio Page
+
+// Portfolio Banner/Web Design Section
+
+.portfolio {
+    padding: 4rem 2rem;
+    &__wrapper {
+        text-align: center;
+        h2 {
+            border-bottom: 2.5px solid $clr--light;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+        }
+        h4 {
+            margin-bottom: 5rem;
+        }
+        h3 {
+            margin-bottom: 3rem;
+        }
+        .web__design {
+            margin-bottom: 2rem;
+        .web__design__image {
+            background-color: $clr--dark--gray;
+            height: 20rem;
+            width: 29rem;
+            margin: 0 auto;
+            padding: 2rem;
+            border-top-right-radius: 3rem;
+            margin-bottom: 1.5rem;
+            .rectangle {
+                width: 23rem;
+                margin: auto;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+        }
+        h4 {
+            font-size: 2rem;
+            text-align: start;
+            margin-bottom: 0;
+        }
+        a {
+            display: flex;
+            justify-content: flex-start;
+        }
+        }
+    }
 }

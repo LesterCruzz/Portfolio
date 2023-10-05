@@ -33,5 +33,29 @@
 		transition: .5s ease;
 	}
 }
+&.bg--solid--primary {
+	background-color: $clr--primary;
+	color: $clr--light;
+	transition: .5s ease;
+	&:hover {
+		background-color: transparent;
+		border: 1.5px solid $clr--light;
+		color: $clr--light;
+	}
+}
 
+}
+
+.btn2 {
+	color: $clr--dark;
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+	transition: .5s ease;
+
+	&.bg__light:hover {
+		color: $clr--light;
+		border-bottom: 1.5px solid $clr--light;
+		width: 13rem;
+	}
 }
