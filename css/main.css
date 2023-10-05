@@ -4955,12 +4955,16 @@ h3,
 h4,
 h5,
 h6 {
-  color: #000000;
+  color: #ECECEC;
 }
 
 p {
   color: #ECECEC;
-  font-size: clamp(1rem, 5vw, 1.4rem);
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 4rem;
 }
 
 body {
@@ -5086,13 +5090,9 @@ img {
   width: 100%;
   z-index: -999;
 }
-.home_background .blobs {
-  position: absolute;
-}
 .home_background .blobs .blob__1 {
   position: relative;
   animation: one 8s infinite;
-  width: 210rem;
 }
 .home_background .blobs .blob__1 .bl1 {
   transform: translate(-24rem, -30rem);
@@ -5177,7 +5177,7 @@ img {
 .header__nav {
   position: absolute;
   top: 0;
-  right: -50rem;
+  right: -200rem;
   width: 100%;
   padding: 3rem;
   transition: 0.5s ease;
@@ -5195,7 +5195,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10rem;
+  gap: 20rem;
   margin-bottom: 4rem;
 }
 .header__nav .header__toggle .t__brand {
@@ -5206,6 +5206,7 @@ img {
 .header__nav .header__toggle .Ex {
   width: 3rem;
   height: 3rem;
+  cursor: pointer;
 }
 .header__nav .header__toggle img {
   width: 4rem;
@@ -5218,16 +5219,25 @@ img {
 }
 .header__nav ul {
   margin-bottom: 20rem;
+  width: 100vw;
 }
 .header__nav li {
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
+  padding: 1.1rem;
+}
+.header__nav li:hover {
+  background-color: #FF4D05;
+  transition: 0.5s ease;
 }
 .header__nav li a {
   font-weight: bold;
   color: #000000;
   z-index: 99;
+}
+.header__nav li a:hover {
+  color: #ECECEC;
 }
 .header__nav .nav__button {
   width: 18rem;
@@ -5238,18 +5248,285 @@ img {
   color: #ECECEC;
   transition: 0.5s ease;
 }
-.header__nav .highlight {
-  position: relative;
-  width: 100%;
-  height: 100%;
+
+.banner {
+  padding: 5rem 4rem 0;
 }
-.header__nav .highlight .h__home {
-  position: absolute;
-  height: 3rem;
-  width: 33rem;
+.banner .banner__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner .banner__wrapper .banner__logo h1 {
+  font-size: 20rem;
+  color: #ECECEC;
+  margin-bottom: 3rem;
+}
+.banner .banner__wrapper .banner__text h3 {
+  text-align: center;
+  color: #ECECEC;
+  margin-bottom: 2.5rem;
+}
+.banner .banner__wrapper .banner__text h3 span {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+.banner .banner__wrapper .banner__text p {
+  text-align: center;
+  margin-bottom: 11rem;
+}
+.banner .banner__wrapper .banner__text a {
+  width: 18rem;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 13rem;
+}
+
+.about {
+  padding: 10rem 0;
+}
+.about .about__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.about .about__wrapper .about__image img {
+  min-width: 20rem;
+  margin-bottom: 6rem;
+}
+.about .about__wrapper .about__text h2 {
+  position: relative;
+  margin-bottom: 4rem;
+}
+.about .about__wrapper .about__text h2 span {
+  color: #FF4D05;
+}
+.about .about__wrapper .about__text h2::before {
+  content: " ";
+  height: 0.3rem;
+  width: 27rem;
   background-color: #FF4D05;
-  top: -37.4rem;
-  left: -3rem;
+  position: absolute;
+  bottom: -1.5rem;
+}
+.about .about__wrapper .about__text h4 {
+  margin-bottom: 5rem;
+  color: #FF4D05;
+}
+.about .about__wrapper .about__text p {
+  text-align: justify;
+  margin-bottom: 7rem;
+}
+
+.services {
+  padding: 10rem 0;
+}
+.services__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 6rem;
+}
+.services__wrapper .services__text h2 {
+  position: relative;
+  margin-bottom: 4rem;
+}
+.services__wrapper .services__text h2 span {
+  color: #FF4D05;
+}
+.services__wrapper .services__text h2::before {
+  content: " ";
+  height: 0.3rem;
+  width: 18.5rem;
+  background-color: #FF4D05;
+  position: absolute;
+  bottom: -1.5rem;
+}
+.services__wrapper .services__text h4 {
+  color: #FF4D05;
+  margin-bottom: 8rem;
+}
+.services__wrapper .services__image {
+  width: 32rem;
+  height: 40rem;
+  position: relative;
+  background-color: #FF4D05;
+  overflow: hidden;
+}
+.services__wrapper .services__image:hover {
+  border-top-right-radius: 2.5rem;
+  transition: 0.5s ease;
+}
+.services__wrapper .services__image img {
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.services__wrapper .services__image img:hover {
+  transform: scale(1.6);
+  filter: grayscale(100%);
+}
+.services__wrapper .serv__d {
+  width: 32rem;
+  height: 0;
+  background-color: #FF4D05;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+.services__wrapper .serv__d h4 {
+  margin: 2rem;
+  font-size: 2rem;
+}
+.services__wrapper .serv__d p {
+  margin: 0 2rem;
+}
+.services__wrapper .serv__d.open {
+  height: 28rem;
+}
+.services .services__image {
+  width: 32rem;
+  height: 40rem;
+  position: relative;
+  background-color: #FF4D05;
+  overflow: hidden;
+}
+.services .services__image:hover {
+  border-top-right-radius: 2.5rem;
+  transition: 0.5s ease;
+}
+.services .services__image img {
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.services .services__image img:hover {
+  transform: scale(1.6);
+  filter: grayscale(100%);
+}
+.services .serv__d {
+  width: 32rem;
+  height: 0;
+  background-color: #FF4D05;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+.services .serv__d h4 {
+  margin: 2rem;
+  font-size: 2rem;
+}
+.services .serv__d p {
+  margin: 0 2rem;
+}
+.services .serv__d.open {
+  height: 28rem;
+  cursor: pointer;
+}
+.services__wrapper2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 6rem;
+}
+.services__wrapper2 .services__image2 {
+  width: 32rem;
+  height: 40rem;
+  position: relative;
+  background-color: #FF4D05;
+  overflow: hidden;
+}
+.services__wrapper2 .services__image2:hover {
+  border-top-right-radius: 2.5rem;
+  transition: 0.5s ease;
+}
+.services__wrapper2 .services__image2 img {
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.services__wrapper2 .services__image2 img:hover {
+  transform: scale(1.6);
+  filter: grayscale(100%);
+}
+.services__wrapper2 .serv__d2 {
+  width: 32rem;
+  height: 0;
+  background-color: #FF4D05;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+.services__wrapper2 .serv__d2 h4 {
+  margin: 2rem;
+  font-size: 2rem;
+}
+.services__wrapper2 .serv__d2 p {
+  margin: 0 2rem;
+}
+.services__wrapper2 .serv__d2.open {
+  height: 28rem;
+  cursor: pointer;
+}
+.services__wrapper3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.services__wrapper3 .services__image3 {
+  width: 32rem;
+  height: 40rem;
+  position: relative;
+  background-color: #FF4D05;
+  overflow: hidden;
+}
+.services__wrapper3 .services__image3:hover {
+  border-top-right-radius: 2.5rem;
+  transition: 0.5s ease;
+}
+.services__wrapper3 .services__image3 img {
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.services__wrapper3 .services__image3 img:hover {
+  transform: scale(1.6);
+  filter: grayscale(100%);
+}
+.services__wrapper3 .serv__d3 {
+  width: 32rem;
+  height: 0;
+  background-color: #FF4D05;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+.services__wrapper3 .serv__d3 h4 {
+  margin: 2rem;
+  font-size: 2rem;
+}
+.services__wrapper3 .serv__d3 p {
+  margin: 0 2rem;
+}
+.services__wrapper3 .serv__d3.open {
+  height: 28rem;
+  cursor: pointer;
 }
 
 .btn {
@@ -5265,4 +5542,22 @@ img {
 }
 .btn.bg--primary:hover {
   background-color: #FF4D05;
+}
+.btn.bg--light {
+  border: 1.5px solid #ECECEC;
+  color: #ECECEC;
+  transition: 0.5s ease;
+}
+.btn.bg--light:hover {
+  background-color: #ECECEC;
+  color: #FF4D05;
+}
+.btn.bg--primary2 {
+  border: 1.5px solid #ECECEC;
+  color: #ECECEC;
+}
+.btn.bg--primary2:hover {
+  background-color: #FF4D05;
+  border: none;
+  transition: 0.5s ease;
 }/*# sourceMappingURL=main.css.map */

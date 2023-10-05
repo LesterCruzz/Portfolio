@@ -22,3 +22,16 @@ mixin centerAll {
 	display: flex;
 	justify-content: space-between;
 }
+@mixin before {
+	h2 {
+		position: relative;
+		&::before {
+			content: ' ';
+			height: 0.2rem;
+			width: 11rem;
+			background-color: $clr--primary;
+			position: absolute;
+			bottom: 0;
+		}
+	}
+}

@@ -14,4 +14,24 @@
 			background-color: $clr--primary;
 		}
 	}
+
+&.bg--light {
+	border: 1.5px solid $clr--light;
+	color: $clr--light;
+	transition: .5s ease;
+	&:hover {
+		background-color: $clr--light;
+		color: $clr--primary;
+	}
+}
+&.bg--primary2 {
+	border: 1.5px solid $clr--light;
+	color: $clr--light;
+	&:hover {
+		background-color: $clr--primary;
+		border: none;
+		transition: .5s ease;
+	}
+}
+
 }
