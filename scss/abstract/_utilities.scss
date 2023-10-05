@@ -52,6 +52,10 @@ $positions: absolute, relative, sticky, fixed;
 
 @for $i from 0 through 150 {
 
+	// height
+	.h--#{$i}{
+		height: $i + rem;
+	}
 	// max height
 	.mh--#{$i} {
 		max-height: $i + rem;

@@ -59,3 +59,17 @@
 		width: 13rem;
 	}
 }
+
+.btn3 {
+	color: $clr--primary;
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+	transition: .5s ease;
+
+	&.bg__light:hover {
+		color: $clr--light;
+		border-bottom: 1.5px solid $clr--light;
+		width: 13rem;
+	}
+}
