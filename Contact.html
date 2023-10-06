@@ -11,9 +11,7 @@
     
     <!-- Background Gradient -->
 
-    <div class="home_background">
-    </div>
-
+    
     <!-- Header -->
 
     <header class="header">
@@ -40,10 +38,10 @@
         </div>
             </div>
             <ul>
-                <li><a href="javascript:void(0)">Home</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="./Services.html">Services</a></li>
+                <li><a href="./Portfolio.html">Portfolio</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
             </ul>
             <div class="highlight">
                 <span class="h__home"></span>
@@ -59,8 +57,11 @@
 
     <section class="contact">
         <div class="container">
+            <h2>Contact.</h2>
             <div class="contact__wrapper">
-                <h2>Contact.</h2>
+                
+
+                <div class="contact__left">
                 <div class="contact__container">
                     <div class="contact__icon">
                         <i class="fa-solid fa-envelope"></i>
@@ -87,17 +88,57 @@
                     <li><a href=""><i class="fa-brands fa-square-behance"></i></a></li>
                     <li><a href=""><i class="fa-brands fa-github"></i></a></li>
                 </ul>
+            </div>
 
                 <div class="contact__box">
                     <input type="text" placeholder="Name">
                     <input type="text" placeholder="Email Address">
-                    <input  type="text" placeholder="Message">
-                    <a href="">Submit</a>
+                    <textarea name="" id="" cols="20" rows="10" placeholder="Message"></textarea>
+                    <a href="" class="btn bg--light">Submit</a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
+
+<footer class="footer bg--dark--gray">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__branding">
+                <a href="">
+                    <img src="./Images/Logo.png" alt="">
+                    <h3><span>C</span>ruzz<span>.</span></h3>
+                </a>
+            </div>
+            <ul>
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-square-behance"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+            <p>©Cruzz. 2023</p>
+        </div>
+    </div>
+</footer>
+
+<section class="bot bg--dark--gray">
+    <h1>bot</h1>
+</section>
+
+<script>
+    const header = document.querySelector(".header");
+
+    window.addEventListener("scroll", () => {
+    console.log(window.scrollY);
+    if (window.scrollY >= 150) {
+      header.classList.add("light");
+    } else {
+      header.classList.remove("light");
+    }
+});
+</script>
     <script src="./js/script.js"></script>
     </body>
     </html>

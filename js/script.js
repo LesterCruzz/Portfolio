@@ -15,6 +15,8 @@ const bo_x = document.querySelector(".box2");
 const serv__D = document.querySelector(".serv__d3");
 const bo__x = document.querySelector(".box3");
 
+const header = document.querySelector(".header");
+
 toggleBtn.addEventListener("click", () =>{
     headerNav.classList.toggle("open");
     toggleBtn.classList.toggle("open"); 
@@ -49,29 +51,37 @@ box.addEventListener("mouseleave", () =>{
      servD.classList.remove("open");
  });
 
-//  Services
 
-// const nav = document.querySelectorAll(".nav");
-// const navContent = document.querySelectorAll(".s__content");
-// nav.forEach((snav) => {
-//   snav.addEventListener("click", () => {
-//     removeActiveNav();
-//     snav.classList.add("active");
-//     const activeNav = document.querySelector(`#${nav.id}-content`);
-//     removeActiveNav();
-//     activeNav.classList.add("active");
-//   });
-// });
+window.addEventListener("scroll", () => {
+    console.log(window.scrollY);
+    if (window.scrollY >= 150) {
+      header.classList.add("light");
+    } else {
+      header.classList.remove("light");
+    }
+});
 
-// function removeActiveNav() {
-//   nav.forEach((snav) => {
-//     snav.classList.remove("active");
-//   });
-// }
 
-// function removeActiveNav() {
-//   navContent.forEach((snav) => {
-//     snav.classList.remove("active");
-//   });
-// }
+const starNav = document.querySelectorAll(".coffee_price");
+const starContent = document.querySelectorAll(".coffee__content");
+starNav.forEach((star) => {
+  star.addEventListener("click", () => {
+    removeActiveStar();
+    star.classList.add("active");
+    const activeContent = document.querySelector(`#${star.id}-content`);
+    removeActiveContent();
+    activeContent.classList.add("active");
+  });
+});
 
+function removeActiveStar() {
+  starNav.forEach((star) => {
+    star.classList.remove("active");
+  });
+}
+
+function removeActiveContent() {
+  starContent.forEach((star) => {
+    star.classList.remove("active");
+  });
+}
