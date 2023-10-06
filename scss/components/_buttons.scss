@@ -53,10 +53,11 @@
 	gap: .5rem;
 	transition: .5s ease;
 
-	&.bg__light:hover {
+	&.bg-light:hover {
 		color: $clr--light;
 		border-bottom: 1.5px solid $clr--light;
-		width: 13rem;
+		width: fit-content;
+		transition: .5s ease;
 	}
 }
 
@@ -71,5 +72,20 @@
 		color: $clr--light;
 		border-bottom: 1.5px solid $clr--light;
 		width: 13rem;
+	}
+}
+
+.btn4 {
+	color: $clr--light;
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+	transition: .5s ease;
+
+	&.bg-light:hover {
+		color: $clr--primary;
+		border-bottom: 1.5px solid $clr--primary;
+		width: fit-content;
+		transition: .5s ease;
 	}
 }

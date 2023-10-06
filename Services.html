@@ -95,66 +95,105 @@
 </section> -->
 
 <section class="coffee bg--dark--gray">
-    <div class="coffee__wrapper">
-      <div class="coffee__stars">
-        <div class="container">
-          <h2>Services</h2>
-          <ul>
-            <li id="star-1" class="coffee_price active">
-              <a href="javascript:void(0)">Web Design</a>
-            </li>
-            <li id="star-2" class="coffee_price">
-              <a href="javascript:void(0)">Web Development</a>
-            </li>
-            <li id="star-3" class="coffee_price">
-              <a href="javascript:void(0)">Graphic Design</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="coffee__slider lg:bg-l-green">
-        
-        <div id="star-1-content" class="coffee__content active">
-          <img src="./Images/web design.png" alt="" />
-          <div class="coffee__content__text">
-            <h4>Web Design</h4>
-            <p>
-                Elevate your online presence with my web design services
-            </p>
-          </div>
-        </div>
-
-        <div id="star-2-content" class="coffee__content">
-          <img src="./Images/discord.png" alt="" />
-          <div class="coffee__content__text">
-            <h4>
-              Web Development
-            </h4>
-            <p>
-                Transforming your ideas into dynamic and responsive websites
-            </p>
-          </div>
-        </div>
-
-        <div id="star-3-content" class="coffee__content">
-          <img src="./Images/polo.png" alt="" />
-          <div class="coffee__content__text">
-            <h4>
-              Graphic Design
-            </h4>
-            <p>
-                Elevate your brand to captivate your audience
-            </p>
-          </div>
-        </div>
-
+  <div class="coffee__wrapper">
+    <div class="coffee__stars">
+      <div class="container">
+        <h2>Services.</h2>
+        <ul>
+          <li id="star-1" class="coffee_price active">
+            <a href="javascript:void(0)">Web Design</a>
+          </li>
+          <li id="star-2" class="coffee_price">
+            <a href="javascript:void(0)">Web Development</a>
+          </li>
+          <li id="star-3" class="coffee_price">
+            <a href="javascript:void(0)">Graphic Design</a>
+          </li>
+        </ul>
       </div>
     </div>
-  </section>
+
+    <div class="coffee__slider lg:bg-l-green">
+      
+      <div class="coffee__contain">
+      <div id="star-1-content" class="coffee__content active">
+        <img src="./Images/web design.png" alt="" />
+        <div class="coffee__content__text">
+          <i class="fa-solid fa-pen-ruler"></i>
+          <h4>Web Design</h4>
+          <p>
+              Elevate your online presence with my web design services
+          </p>
+          <div class="know__button">
+          <a href="" class="btn2 bg-light">KNOW MORE </a>
+        </div>
+        </div>
+      </div>
+    
+      <div id="star-2-content" class="coffee__content">
+        <img src="./Images/discord.png" alt="" />
+        <div class="coffee__content__text">
+          <i class="fa-solid fa-layer-group"></i>
+          <h4>
+            Web Development
+          </h4>
+          <p>
+              Transforming your ideas into dynamic and responsive websites
+          </p>
+          <div class="know__button">
+            <a href="" class="btn2 bg-light">KNOW MORE </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="star-3-content" class="coffee__content">
+        <img src="./Images/polo.png" alt="" />
+        <div class="coffee__content__text">
+          <i class="fa-solid fa-pen-nib"></i>
+          <h4>
+            Graphic Design
+          </h4>
+          <p>
+              Elevate your brand to captivate your audience
+          </p>
+          <div class="know__button">
+            <a href="" class="btn2 bg-light">KNOW MORE </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+</section>
 
 
 <script>
+
+const starNav = document.querySelectorAll(".coffee_price");
+const starContent = document.querySelectorAll(".coffee__content");
+starNav.forEach((star) => {
+  star.addEventListener("click", () => {
+    removeActiveStar();
+    star.classList.add("active");
+    const activeContent = document.querySelector(`#${star.id}-content`);
+    removeActiveContent();
+    activeContent.classList.add("active");
+  });
+});
+
+function removeActiveStar() {
+  starNav.forEach((star) => {
+    star.classList.remove("active");
+  });
+}
+
+function removeActiveContent() {
+  starContent.forEach((star) => {
+    star.classList.remove("active");
+  });
+}
+
 const headerNav = document.querySelector(".header__nav");
 const toggleBtn = document.querySelector(".toggle__menu");
 
@@ -219,29 +258,7 @@ window.addEventListener("scroll", () => {
 });
 
 
-const starNav = document.querySelectorAll(".coffee_price");
-const starContent = document.querySelectorAll(".coffee__content");
-starNav.forEach((star) => {
-  star.addEventListener("click", () => {
-    removeActiveStar();
-    star.classList.add("active");
-    const activeContent = document.querySelector(`#${star.id}-content`);
-    removeActiveContent();
-    activeContent.classList.add("active");
-  });
-});
 
-function removeActiveStar() {
-  starNav.forEach((star) => {
-    star.classList.remove("active");
-  });
-}
-
-function removeActiveContent() {
-  starContent.forEach((star) => {
-    star.classList.remove("active");
-  });
-}
 </script>
 
 

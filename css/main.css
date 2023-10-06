@@ -9627,6 +9627,12 @@ img {
   }
   .about .about__wrapper .about__text {
     text-align: start;
+    display: flex;
+    flex-direction: column;
+  }
+  .about .about__wrapper .about__text h2 {
+    margin: 0;
+    margin-bottom: 4rem;
   }
 }
 
@@ -9955,11 +9961,18 @@ img {
 
 .coffee {
   padding-top: 12rem;
-  padding-bottom: 50rem;
 }
 .coffee__wrapper {
   display: flex;
   flex-direction: column;
+}
+.coffee__wrapper .coffee__stars h2 {
+  margin-bottom: 0;
+  border-bottom: 2.5px solid #ECECEC;
+  padding-bottom: 2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
 }
 .coffee__wrapper .coffee__stars .container {
   display: flex;
@@ -9987,9 +10000,17 @@ img {
   color: #ECECEC;
   opacity: 50%;
   margin-bottom: 5rem;
+  transition: 0.3s ease;
 }
 .coffee__wrapper .coffee__stars ul a:hover {
   opacity: 100%;
+  border-bottom: 2.5px solid #FF4D05;
+  padding-bottom: 2rem;
+}
+.coffee__wrapper .coffee__stars ul a:focus {
+  opacity: 100%;
+  border-bottom: 2.5px solid #FF4D05;
+  padding-bottom: 2rem;
 }
 .coffee__wrapper .coffee__stars ul span {
   font-size: 3rem;
@@ -9997,42 +10018,78 @@ img {
   color: #000000;
 }
 .coffee__wrapper .coffee__slider {
-  padding: 8rem;
+  padding: 0 8rem;
 }
-.coffee__wrapper .coffee__slider .coffee__content {
-  left: 75rem;
+.coffee__wrapper .coffee__slider .coffee__contain {
+  width: 67rem;
+  height: 57rem;
+  margin: auto;
+  position: relative;
+}
+.coffee__wrapper .coffee__slider .coffee__contain .coffee__content {
+  left: 0;
+  bottom: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 5rem;
   opacity: 0;
   position: absolute;
   transform: translateX(27rem);
   transform: translateY(-7rem);
 }
-.coffee__wrapper .coffee__slider .coffee__content.active {
+.coffee__wrapper .coffee__slider .coffee__contain .coffee__content.active {
   display: flex !important;
   opacity: 100%;
   z-index: 999;
   transition: 0.5s ease;
   position: absolute;
 }
-.coffee__wrapper .coffee__slider .coffee__content img {
+.coffee__wrapper .coffee__slider .coffee__contain .coffee__content img {
   max-width: 40rem;
   border-top-right-radius: 3rem;
 }
-.coffee__wrapper .coffee__slider .coffee__content .coffee__content__text {
+.coffee__wrapper .coffee__slider .coffee__contain .coffee__content .coffee__content__text {
+  border-top-right-radius: 3rem;
   background-color: #FF4D05;
   padding: 3rem;
   max-width: 22rem;
 }
-.coffee__wrapper .coffee__slider .coffee__content .coffee__content__text h4 {
+.coffee__wrapper .coffee__slider .coffee__contain .coffee__content .coffee__content__text i {
+  color: #ECECEC;
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+.coffee__wrapper .coffee__slider .coffee__contain .coffee__content .coffee__content__text h4 {
   font-weight: bold;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
+.coffee__wrapper .coffee__slider .coffee__contain .coffee__content .coffee__content__text p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.coffee__wrapper .coffee__slider .coffee__contain .coffee__content .coffee__content__text .know__button {
+  display: flex;
+  align-items: baseline;
+}
+.coffee__wrapper .coffee__slider .coffee__contain .coffee__content .coffee__content__text .know__button a {
+  font-size: 1.5rem;
+}
+.coffee__wrapper .coffee__slider .coffee__contain #star-1-content {
+  bottom: -3rem;
+}
+.coffee__wrapper .coffee__slider .coffee__contain #star-3-content {
+  bottom: 14rem;
+}
 
 .portfolio {
+  z-index: -1;
+  background: linear-gradient(-45deg, rgb(224, 173, 164), rgb(219, 81, 0), rgb(233, 182, 134), #FF4D05, #000000);
+  background-size: 400% 400%;
+  width: 100%;
+  height: 100%;
+  animation: animate 15s ease infinite;
   padding: 12rem 2rem 0;
 }
 .portfolio h2 {
@@ -10425,10 +10482,12 @@ img {
   gap: 0.5rem;
   transition: 0.5s ease;
 }
-.btn2.bg__light:hover {
+.btn2.bg-light:hover {
   color: #ECECEC;
   border-bottom: 1.5px solid #ECECEC;
-  width: 13rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: 0.5s ease;
 }
 
 .btn3 {
@@ -10442,4 +10501,19 @@ img {
   color: #ECECEC;
   border-bottom: 1.5px solid #ECECEC;
   width: 13rem;
+}
+
+.btn4 {
+  color: #ECECEC;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: 0.5s ease;
+}
+.btn4.bg-light:hover {
+  color: #FF4D05;
+  border-bottom: 1.5px solid #FF4D05;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: 0.5s ease;
 }/*# sourceMappingURL=main.css.map */

@@ -381,6 +381,12 @@
                     }
                     .about__text {
                         text-align: start;
+                        display: flex;
+                        flex-direction: column;
+                        h2 {
+                            margin: 0;
+                            margin-bottom: 4rem;
+                        }
                     }
                 }
             }
@@ -810,12 +816,19 @@
 .coffee {
     
     padding-top: 12rem;
-    padding-bottom: 50rem;
+    
     &__wrapper {
         
         display: flex;
         flex-direction: column;
     .coffee__stars {
+        h2 {
+            margin-bottom: 0;
+            border-bottom: 2.5px solid $clr--light;
+            padding-bottom: 2rem;
+            width: fit-content;
+            margin: 0 auto;
+        }
         .container {
             display: flex;
             flex-direction: column;
@@ -825,7 +838,6 @@
         }
         ul {
             display: flex;
-
             position: relative;
             li {
                 transition: .5s ease;
@@ -843,8 +855,18 @@
                 color: $clr--light;
                 opacity: 50%;
                 margin-bottom: 5rem;
+                transition: .3s ease;
                 &:hover {
                     opacity: 100%;
+                    border-bottom: 2.5px solid $clr--primary;
+                    padding-bottom: 2rem;
+                    
+                }
+                &:focus {
+                    opacity: 100%;
+                    border-bottom: 2.5px solid $clr--primary;
+                    padding-bottom: 2rem;
+                    
                 }
             }
             span {
@@ -855,13 +877,19 @@
         }
     }
     .coffee__slider {
-        padding: 8rem;
-        
+        padding: 0 8rem;
+        .coffee__contain {
+            
+            width: 67rem;
+            height: 57rem;
+            margin: auto;
+            position: relative;
         .coffee__content {
-            left: 75rem;
+            left: 0;
+            bottom: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             gap: 5rem;
             opacity: 0;
             position: absolute;
@@ -880,16 +908,44 @@
                 border-top-right-radius: 3rem;
             }
             .coffee__content__text {
+                border-top-right-radius: 3rem;
                 background-color: $clr--primary;
                 padding: 3rem;
                 max-width: 22rem;
+                i {
+                    color: $clr--light;
+                    font-size: 2.6rem;
+                    margin-bottom: 1rem;
+                }
                 h4 {
                     font-weight: bold;
                     font-size: 1.5rem;
                     margin-bottom: 1.5rem;
                 }
+                p {
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                }
+                .know__button {
+                    display: flex;
+                    align-items: baseline;
+                    
+                    a {
+                        
+                        font-size: 1.5rem;
+                        
+                    }
+                    
+                }
             }
         }
+        #star-1-content {
+            bottom: -3rem;
+        }
+        #star-3-content {
+            bottom: 14rem;
+        }
+    }
     }
 }
 
@@ -902,6 +958,12 @@
 // Portfolio Banner/Web Design Section
 
 .portfolio {
+    z-index: -1;
+    background: linear-gradient(-45deg, rgb(224, 173, 164), rgb(219, 81, 0), rgb(233, 182, 134), $clr--primary, $clr--dark);
+    background-size: 400% 400%;
+    width: 100%;
+    height: 100%;
+    animation: animate 15s ease infinite;
     padding: 12rem 2rem 0;
     h2 {
         border-bottom: 2.5px solid $clr--light;
