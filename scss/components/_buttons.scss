@@ -15,20 +15,31 @@
 		}
 	}
 
+&.bg--dark--blue {
+	border: 1.5px solid $c--dark--blue;
+        color: $c--dark--blue;
+		&:hover {
+			
+			background-color: $c--dark--blue;
+			color: $clr--light;
+		}
+}
+
 &.bg--light {
 	border: 1.5px solid $clr--light;
 	color: $clr--light;
 	transition: .5s ease;
 	&:hover {
 		background-color: $clr--light;
-		color: $clr--primary;
+		color: $c--dark--blue;
 	}
 }
 &.bg--primary2 {
-	border: 1.5px solid $clr--light;
+	border: 1.5px solid $c--light--blue;
 	color: $clr--light;
 	&:hover {
-		background-color: $clr--primary;
+		background-color: $c--light--blue;
+		color: $c--dark--blue;
 		border: none;
 		transition: .5s ease;
 	}

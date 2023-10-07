@@ -18,6 +18,12 @@ mixin centerAll {
 	}
 }
 
+@mixin mediaQuery2($width) {
+	@media screen and (max-width: $width) {
+		@content;
+	}
+}
+
 @mixin between {
 	display: flex;
 	justify-content: space-between;
