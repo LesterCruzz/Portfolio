@@ -421,13 +421,13 @@
                     content: ' ';
                     height: 0.3rem;
                     width: 18.5rem;
-                    background-color: $clr--primary;
+                    background-color: $c--light--blue;
                     position: absolute;
                     bottom: -1.5rem;
                 }
             }
             h4 {
-                color: $clr--primary;
+                color: $c--light--blue;
                 margin-bottom: 8rem;
             }
         }
@@ -445,7 +445,7 @@
                 width: 32rem;
                 height: 40rem;
                 position: relative;
-                background-color: $clr--primary;
+                background-color: $c--light--blue;
                 overflow: hidden;
                 
                 img {
@@ -509,7 +509,7 @@
     .serv__d {
         width: 32rem;
         height: 0;
-        background-color: $clr--primary;
+        background-color: $c--dark--blue;
         position: absolute;
         bottom: 0;
         overflow: hidden;
@@ -561,7 +561,7 @@
     .serv__d2 {
         width: 32rem;
         height: 0;
-        background-color: $clr--primary;
+        background-color: $c--dark--blue;
         position: absolute;
         bottom: 0;
         overflow: hidden;
@@ -613,7 +613,7 @@
         .serv__d3 {
             width: 32rem;
             height: 0;
-            background-color: $clr--primary;
+            background-color: $c--dark--blue;
             position: absolute;
             bottom: 0;
             overflow: hidden;
@@ -667,11 +667,11 @@
             max-width: 50%;
             
             span {
-                color: $clr--primary;
+                color: $c--light--blue;
             }
         }
         h4 {
-            color: $clr--primary;
+            color: $c--light--blue;
             margin-bottom: 4rem;
         }
         
@@ -752,7 +752,7 @@
 .cta {
     
     z-index: -1;
-    background: linear-gradient(-45deg, $clr--primary, rgb(172, 29, 4), rgb(219, 81, 0), rgb(207, 103, 5), $clr--primary, $clr--dark);
+    background: linear-gradient(-45deg, rgb(224, 173, 164), $c--dark--blue, $c--light--blue, $clr--dark, $c--dark--blue);
     background-size: 400% 400%;
     width: 100%;
     height: 100%;
@@ -820,7 +820,7 @@
             h3 {
                 font-size: 3rem;
                 span {
-                    color: $clr--primary;
+                    color: $c--light--blue;
                 }
             }
         }
@@ -830,7 +830,7 @@
             display: flex;
             gap: 3rem;
             a {
-                color: $clr--primary;
+                color: $c--light--blue;
                 font-size: 2.5rem;
                 &:hover {
                     color: $clr--light;
@@ -1046,6 +1046,12 @@
             bottom: 14rem;
         }
     }
+    }
+}
+
+@include mediaQuery2(550px) {
+    .coffee {
+
     }
 }
 

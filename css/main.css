@@ -9664,12 +9664,12 @@ img {
   content: " ";
   height: 0.3rem;
   width: 18.5rem;
-  background-color: #FF4D05;
+  background-color: #83a0bd;
   position: absolute;
   bottom: -1.5rem;
 }
 .services .services__text h4 {
-  color: #FF4D05;
+  color: #83a0bd;
   margin-bottom: 8rem;
 }
 .services__wrapper {
@@ -9684,7 +9684,7 @@ img {
   width: 32rem;
   height: 40rem;
   position: relative;
-  background-color: #FF4D05;
+  background-color: #83a0bd;
   overflow: hidden;
 }
 .services__wrapper .services__image img {
@@ -9736,7 +9736,7 @@ img {
 .services .serv__d {
   width: 32rem;
   height: 0;
-  background-color: #FF4D05;
+  background-color: #09182B;
   position: absolute;
   bottom: 0;
   overflow: hidden;
@@ -9781,7 +9781,7 @@ img {
 .services__wrapper2 .serv__d2 {
   width: 32rem;
   height: 0;
-  background-color: #FF4D05;
+  background-color: #09182B;
   position: absolute;
   bottom: 0;
   overflow: hidden;
@@ -9826,7 +9826,7 @@ img {
 .services__wrapper3 .serv__d3 {
   width: 32rem;
   height: 0;
-  background-color: #FF4D05;
+  background-color: #09182B;
   position: absolute;
   bottom: 0;
   overflow: hidden;
@@ -9873,10 +9873,10 @@ img {
   max-width: 50%;
 }
 .featured .container h2 span {
-  color: #FF4D05;
+  color: #83a0bd;
 }
 .featured .container h4 {
-  color: #FF4D05;
+  color: #83a0bd;
   margin-bottom: 4rem;
 }
 .featured .container .featured__wrapper {
@@ -9942,7 +9942,7 @@ img {
 
 .cta {
   z-index: -1;
-  background: linear-gradient(-45deg, #FF4D05, rgb(172, 29, 4), rgb(219, 81, 0), rgb(207, 103, 5), #FF4D05, #000000);
+  background: linear-gradient(-45deg, rgb(224, 173, 164), #09182B, #83a0bd, #000000, #09182B);
   background-size: 400% 400%;
   width: 100%;
   height: 100%;
@@ -10008,7 +10008,7 @@ img {
   font-size: 3rem;
 }
 .footer .footer__wrapper .footer__branding a h3 span {
-  color: #FF4D05;
+  color: #83a0bd;
 }
 .footer .footer__wrapper ul {
   margin-bottom: 3rem;
@@ -10016,7 +10016,7 @@ img {
   gap: 3rem;
 }
 .footer .footer__wrapper ul a {
-  color: #FF4D05;
+  color: #83a0bd;
   font-size: 2.5rem;
 }
 .footer .footer__wrapper ul a:hover {
@@ -10160,7 +10160,6 @@ img {
 .coffee__wrapper .coffee__slider .coffee__contain #star-3-content {
   bottom: 14rem;
 }
-
 .portfolio {
   z-index: -1;
   background: linear-gradient(-45deg, rgb(224, 173, 164), rgb(219, 81, 0), rgb(233, 182, 134), #FF4D05, #000000);
