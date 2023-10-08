@@ -9360,6 +9360,11 @@ img {
     top: 0px;
   }
 }
+.resume embed {
+  width: 100%;
+  height: 100vh;
+}
+
 .header {
   padding: 2rem;
   position: fixed;
@@ -9987,6 +9992,7 @@ img {
 
 .footer {
   padding: 4rem;
+  background-color: #09182B;
 }
 .footer .footer__wrapper {
   display: flex;
@@ -10069,6 +10075,7 @@ img {
   border: transparent;
   display: flex;
   align-items: center;
+  text-align: center;
 }
 .coffee__wrapper .coffee__stars ul li.active {
   border: #FF4D05;
@@ -10082,7 +10089,7 @@ img {
 }
 .coffee__wrapper .coffee__stars ul a:hover {
   opacity: 100%;
-  border-bottom: 2.5px solid #FF4D05;
+  border-bottom: 2.5px solid #83a0bd;
   padding-bottom: 2rem;
 }
 .coffee__wrapper .coffee__stars ul a:focus {
@@ -10119,7 +10126,6 @@ img {
 .coffee__wrapper .coffee__slider .coffee__contain .coffee__content.active {
   display: flex !important;
   opacity: 100%;
-  z-index: 999;
   transition: 0.5s ease;
   position: absolute;
 }
@@ -10129,12 +10135,12 @@ img {
 }
 .coffee__wrapper .coffee__slider .coffee__contain .coffee__content .coffee__content__text {
   border-top-right-radius: 3rem;
-  background-color: #FF4D05;
+  background-color: #83a0bd;
   padding: 3rem;
   max-width: 22rem;
 }
 .coffee__wrapper .coffee__slider .coffee__contain .coffee__content .coffee__content__text i {
-  color: #ECECEC;
+  color: #09182B;
   font-size: 2.6rem;
   margin-bottom: 1rem;
 }
@@ -10142,17 +10148,19 @@ img {
   font-weight: bold;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
+  color: #09182B;
 }
 .coffee__wrapper .coffee__slider .coffee__contain .coffee__content .coffee__content__text p {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #09182B;
 }
 .coffee__wrapper .coffee__slider .coffee__contain .coffee__content .coffee__content__text .know__button {
   display: flex;
   align-items: baseline;
 }
 .coffee__wrapper .coffee__slider .coffee__contain .coffee__content .coffee__content__text .know__button a {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .coffee__wrapper .coffee__slider .coffee__contain #star-1-content {
   bottom: -3rem;
@@ -10162,7 +10170,7 @@ img {
 }
 .portfolio {
   z-index: -1;
-  background: linear-gradient(-45deg, rgb(224, 173, 164), rgb(219, 81, 0), rgb(233, 182, 134), #FF4D05, #000000);
+  background: linear-gradient(-45deg, rgb(224, 173, 164), #09182B, #83a0bd, #000000, #09182B);
   background-size: 400% 400%;
   width: 100%;
   height: 100%;
@@ -10253,7 +10261,7 @@ img {
   margin-bottom: 4rem;
 }
 .development__wrapper .web__design .web__design__image {
-  background-color: #FF4D05;
+  background-color: #83a0bd;
   height: 20rem;
   width: 29rem;
   margin: 0 auto;
@@ -10300,6 +10308,7 @@ img {
 }
 
 .graphic {
+  background-color: #09182B;
   padding: 5rem;
 }
 .graphic__wrapper h3 {
@@ -10362,7 +10371,7 @@ img {
 
 .contact {
   z-index: -1;
-  background: linear-gradient(-45deg, #FF4D05, rgb(224, 173, 164), rgb(219, 81, 0), rgb(233, 182, 134), #FF4D05, #000000);
+  background: linear-gradient(-45deg, rgb(224, 173, 164), #09182B, #83a0bd, #000000, #09182B);
   background-size: 400% 400%;
   width: 100%;
   height: 100%;
@@ -10382,7 +10391,7 @@ img {
   text-align: center;
 }
 .contact__wrapper .contact__container {
-  background-color: #111111;
+  background-color: #09182B;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -10425,7 +10434,7 @@ img {
   gap: 4rem;
 }
 .contact__wrapper ul a {
-  color: #111111;
+  color: #83a0bd;
   font-size: 2.5rem;
 }
 .contact__wrapper ul a:hover {
@@ -10434,7 +10443,7 @@ img {
 .contact__wrapper .contact__box {
   display: flex;
   flex-direction: column;
-  background-color: #FF4D05;
+  background-color: #83a0bd;
   padding: 3rem;
   width: 100%;
   border-top-right-radius: 3rem;
@@ -10446,33 +10455,34 @@ img {
   font-size: 2rem;
   margin-bottom: 3rem;
   background-color: transparent;
-  color: #ECECEC;
-  border-bottom: 1.5px solid #ECECEC;
+  color: #09182B;
+  border-bottom: 1.5px solid #09182B;
 }
 .contact__wrapper .contact__box input::-moz-placeholder {
-  color: #ECECEC;
+  color: #09182B;
   opacity: 50%;
 }
 .contact__wrapper .contact__box input::placeholder {
-  color: #ECECEC;
+  color: #09182B;
   opacity: 50%;
 }
 .contact__wrapper .contact__box textarea {
   padding: 3rem 0;
   font-size: 2rem;
   background-color: transparent;
-  color: #ECECEC;
-  border-bottom: 1.5px solid #ECECEC;
+  color: #09182B;
+  border-bottom: 1.5px solid #09182B;
+  overflow: hidden;
   height: 8rem;
   margin-bottom: 4rem;
   width: 100%;
 }
 .contact__wrapper .contact__box textarea::-moz-placeholder {
-  color: #ECECEC;
+  color: #09182B;
   opacity: 50%;
 }
 .contact__wrapper .contact__box textarea::placeholder {
-  color: #ECECEC;
+  color: #09182B;
   opacity: 50%;
 }
 .contact__wrapper .contact__box a {
@@ -10501,6 +10511,7 @@ img {
 }
 
 .bot {
+  background-color: #09182B;
   position: absolute;
   width: 100%;
 }
@@ -10577,7 +10588,7 @@ img {
 }
 
 .btn3 {
-  color: #FF4D05;
+  color: #83a0bd;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -10597,8 +10608,8 @@ img {
   transition: 0.5s ease;
 }
 .btn4.bg-light:hover {
-  color: #FF4D05;
-  border-bottom: 1.5px solid #FF4D05;
+  color: #83a0bd;
+  border-bottom: 1.5px solid #83a0bd;
   width: -moz-fit-content;
   width: fit-content;
   transition: 0.5s ease;

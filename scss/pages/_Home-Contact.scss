@@ -61,7 +61,14 @@
         100%{left: 0px; top: 0px;}
     }
 
+// Resume Page
 
+.resume {
+    embed {
+        width: 100%;
+        height: 100vh;
+    }
+}
 
 
 // Header
@@ -98,6 +105,7 @@
             
         }
         &__nav {
+            
             position: absolute;
             top: 0;
             right: -220rem;
@@ -804,6 +812,7 @@
 
 .footer {
     padding: 4rem;
+    background-color: $c--dark--blue;
     .footer__wrapper {
         display: flex;
         flex-direction: column;
@@ -946,6 +955,7 @@
                 border: transparent;
                 display: flex;
                 align-items: center;
+                text-align: center;
                 &.active {
                     border: $clr--primary;
                 }
@@ -958,7 +968,7 @@
                 transition: .3s ease;
                 &:hover {
                     opacity: 100%;
-                    border-bottom: 2.5px solid $clr--primary;
+                    border-bottom: 2.5px solid $c--light--blue;
                     padding-bottom: 2rem;
                     
                 }
@@ -998,7 +1008,7 @@
             &.active {
                 display: flex !important;
                 opacity: 100%;
-                z-index: 999;
+                
                 transition: .5s ease;
                 position: absolute;
 
@@ -1009,11 +1019,11 @@
             }
             .coffee__content__text {
                 border-top-right-radius: 3rem;
-                background-color: $clr--primary;
+                background-color: $c--light--blue;
                 padding: 3rem;
                 max-width: 22rem;
                 i {
-                    color: $clr--light;
+                    color: $c--dark--blue;
                     font-size: 2.6rem;
                     margin-bottom: 1rem;
                 }
@@ -1021,10 +1031,12 @@
                     font-weight: bold;
                     font-size: 1.5rem;
                     margin-bottom: 1.5rem;
+                    color: $c--dark--blue;
                 }
                 p {
-                    font-size: 1.5rem;
-                    margin-bottom: 1rem;
+                    font-size: 1.8rem;
+                    margin-bottom: 2rem;
+                    color: $c--dark--blue;
                 }
                 .know__button {
                     display: flex;
@@ -1032,7 +1044,7 @@
                     
                     a {
                         
-                        font-size: 1.5rem;
+                        font-size: 1.3rem;
                         
                     }
                     
@@ -1065,7 +1077,7 @@
 
 .portfolio {
     z-index: -1;
-    background: linear-gradient(-45deg, rgb(224, 173, 164), rgb(219, 81, 0), rgb(233, 182, 134), $clr--primary, $clr--dark);
+    background: linear-gradient(-45deg, rgb(224, 173, 164), $c--dark--blue, $c--light--blue, $clr--dark, $c--dark--blue);
     background-size: 400% 400%;
     width: 100%;
     height: 100%;
@@ -1161,7 +1173,7 @@
             margin: auto;
             margin-bottom: 4rem;
         .web__design__image {
-            background-color: $clr--primary;
+            background-color: $c--light--blue;
             height: 20rem;
             width: 29rem;
             margin: 0 auto;
@@ -1218,6 +1230,7 @@
 // Graphic Design
 
 .graphic {
+    background-color: $c--dark--blue;
     padding: 5rem;
     &__wrapper {
         h3 {
@@ -1289,7 +1302,7 @@
 
 .contact {
     z-index: -1;
-    background: linear-gradient(-45deg, $clr--primary, rgb(224, 173, 164), rgb(219, 81, 0), rgb(233, 182, 134), $clr--primary, $clr--dark);
+    background: linear-gradient(-45deg, rgb(224, 173, 164), $c--dark--blue, $c--light--blue, $clr--dark, $c--dark--blue);
     background-size: 400% 400%;
     width: 100%;
     height: 100%;
@@ -1308,7 +1321,7 @@
         text-align: center;
         
         .contact__container {
-            background-color: $clr--dark--gray;
+            background-color: $c--dark--blue;
             display: flex;
             justify-content: start;
             align-items: center;
@@ -1351,7 +1364,7 @@
             display: flex;
             gap: 4rem;
             a {
-                color: $clr--dark--gray;
+                color: $c--light--blue;
                 font-size: 2.5rem;
                 &:hover {
                     color: $clr--light;
@@ -1361,7 +1374,7 @@
         .contact__box {
             display: flex;
             flex-direction: column;
-            background-color: $clr--primary;
+            background-color: $c--light--blue;
             padding: 3rem;
             width: 100%;
             border-top-right-radius: 3rem;
@@ -1372,10 +1385,10 @@
                 font-size: 2rem;
                 margin-bottom: 3rem;
                 background-color: transparent;
-                color: $clr--light;
-                border-bottom: 1.5px solid $clr--light;
+                color: $c--dark--blue;
+                border-bottom: 1.5px solid $c--dark--blue;
                 &::placeholder{
-                    color: $clr--light;
+                    color: $c--dark--blue;
                     opacity: 50%;
                 }
                 
@@ -1384,13 +1397,14 @@
                 padding: 3rem 0;
                 font-size: 2rem;
                 background-color: transparent;
-                color: $clr--light;
-                border-bottom: 1.5px solid $clr--light;
+                color: $c--dark--blue;
+                border-bottom: 1.5px solid $c--dark--blue;
+                overflow: hidden;
                 height: 8rem;
                 margin-bottom: 4rem;
                 width: 100%;
                 &::placeholder {
-                    color: $clr--light;
+                    color: $c--dark--blue;
                     opacity: 50%;
                 }
             }
@@ -1435,6 +1449,7 @@
 
 
 .bot {
+    background-color: $c--dark--blue;
     position: absolute;
     width: 100%;
     h1 {

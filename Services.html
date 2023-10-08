@@ -11,11 +11,11 @@
 
 <!-- Header -->
 
-<header class="header bg--dark--gray">
+<header class="header">
     <div class="container">
         <div class="header__wrapper">
             <div class="branding">
-                <img src="./Images/Logo.png" alt="">
+                <img src="./Images/v2/Logo2.png" alt="">
                 <h3>Cruzz.</h3>
             </div>
             <div class="toggle__menu">
@@ -27,11 +27,11 @@
     <div class="header__nav">
         <div class="header__toggle">
             <div class="t__brand">
-            <img src="./Images/Logo.png" alt="">
+            <img src="./Images/v2/Logo3.png" alt="">
             <h3><span>C</span>ruzz<span>.</span></h3>
         </div>
         <div class="Ex">
-        <img src="./Images/Group 17Ex.png"  alt="">
+        <img src="./Images/v2/Ex2.png"  alt="">
     </div>
         </div>
         <ul>
@@ -46,7 +46,7 @@
             <span class="h__portfolio"></span>
             <span class="h__contact"></span>
         </div>
-        <div class="nav__button btn bg--primary">Hire Me</div>
+        <a href="./CV/Cruz_Resume .pdf" class="nav__button btn bg--dark--blue">Hire Me</a>
     </div>
 </header>
 
@@ -165,7 +165,45 @@
     </div>
   </div>
 </section>
+
+<!-- Call To Action -->
+
+<section class="cta">
+  <div class="container">
+      <div class="cta__wrapper">
+          <div class="cta__text">
+              <h2>Let's work together on your next project</h2>
+              <p>Feel free to talk to me. I will love to hear from you!</p>
+          </div>
+          <div class="cta__button">
+              <a href="./Contact.html" class="btn bg--light">Contact Me</a>
+          </div>
+      </div>
+  </div>
 </section>
+
+<!-- Footer -->
+
+<footer class="footer bg--dark--gray">
+  <div class="container">
+      <div class="footer__wrapper">
+          <div class="footer__branding">
+              <a href="./Home.html">
+                  <img src="./Images/v2/Logo2.png" alt="">
+                  <h3><span>C</span>ruzz<span>.</span></h3>
+              </a>
+          </div>
+          <ul>
+              <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-square-behance"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+          </ul>
+          <p>©Cruzz. 2023</p>
+      </div>
+  </div>
+</footer>
 
 
 <script>
@@ -213,6 +251,15 @@ const bo__x = document.querySelector(".box3");
 
 const header = document.querySelector(".header");
 
+window.addEventListener("scroll", () => {
+    console.log(window.scrollY);
+    if (window.scrollY >= 150) {
+      header.classList.add("light");
+    } else {
+      header.classList.remove("light");
+    }
+});
+
 toggleBtn.addEventListener("click", () =>{
     headerNav.classList.toggle("open");
     toggleBtn.classList.toggle("open"); 
@@ -246,18 +293,6 @@ box.addEventListener("mouseleave", () =>{
     servicesImg.classList.remove("open");
      servD.classList.remove("open");
  });
-
-
-window.addEventListener("scroll", () => {
-    console.log(window.scrollY);
-    if (window.scrollY >= 150) {
-      header.classList.add("light");
-    } else {
-      header.classList.remove("light");
-    }
-});
-
-
 
 </script>
 

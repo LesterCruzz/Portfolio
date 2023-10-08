@@ -73,7 +73,7 @@
 }
 
 .btn3 {
-	color: $clr--primary;
+	color: $c--light--blue;
 	display: flex;
 	align-items: center;
 	gap: .5rem;
@@ -94,8 +94,8 @@
 	transition: .5s ease;
 
 	&.bg-light:hover {
-		color: $clr--primary;
-		border-bottom: 1.5px solid $clr--primary;
+		color: $c--light--blue;
+		border-bottom: 1.5px solid $c--light--blue;
 		width: fit-content;
 		transition: .5s ease;
 	}
