@@ -21,31 +21,6 @@
     }
 }
     
-// background-color: $clr--dark;
-    // height: 100vh;
-    // position: absolute;
-    // width: 100%;
-    // z-index: -999;
-
-    // .blobs {
-        
-    // .blob__1 {
-    //     position: relative;
-    //     animation: one 8s infinite;
-    //     // width: 210rem;
-
-    //     .bl1 {
-    //         transform: translate(-24rem, -30rem);
-    //     }
-    // }
-    // .blob__2 {
-    //     position: relative;
-    //     animation: two 7s infinite;
-    //     width: 150rem;
-    //     img {
-    //         transform: translate(-70rem, -250rem);
-    //     }
-    
     @keyframes one {
         0%{left: 0px; top: 0px;}
         25%{left: -100px; top: 70px;}
